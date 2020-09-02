@@ -1,0 +1,12 @@
+﻿@using Microsoft.Extensions.Localization
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+
+<h1>@ViewData["Title"]</h1>
+ @ViewData["privacy"]
+<br />
+@SharedLocalizer["privacyTest"]
+<p>Use this page to detail your site's privacy policy.</p>
